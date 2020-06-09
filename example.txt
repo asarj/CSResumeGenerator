@@ -1,0 +1,74 @@
+---------------------------------------
+BASICS
+---------------------------------------
+Ajay Sarjoo
+1-234-567-8901
+ajay@me.com
+http://mywebsite.com
+https://linkedin.com/in/mylinkedinurl/
+https://github.com/asarj
+
+
+---------------------------------------
+EDUCATION
+---------------------------------------
+Some University -- Somewhere, NY
+* Expected May 2021
+* Bachelor of Science in Computer Science
+* Cumulative GPA: 4.0
+* Relevant Courses: Data Structures, Algorithms, Machine Learning, Natural Language Processing
+
+
+---------------------------------------
+EXPERIENCE
+---------------------------------------
+Researcher -- Research Lab -- New York, NY -- December 2019 - Present
+* Detail one
+* Detail two
+* Detail three
+
+Teaching Assistant -- Somewhere University -- Somewhere, NY -- August 2019 - May 2020
+* Detail one
+* Detail two
+
+
+---------------------------------------
+PROJECTS
+---------------------------------------
+Calculator -- Python, React.js -- May 2020 - June 2020
+* Detail one
+* Detail two
+
+Trading App -- HTML, CSS, JavaScript -- January 2019 - May 2019
+* Detail one
+
+
+---------------------------------------
+EXTRACURRICULARS
+---------------------------------------
+Club Member -- Computing Society -- Somewhere, NY -- August 2018 - May 2020
+* Detail one
+* Detail two
+* Detail three
+
+
+---------------------------------------
+LANGUAGES AND TECHNOLOGIES
+---------------------------------------
+LANGUAGES
+Java, Python
+
+WEB DEVELOPMENT
+HTML, CSS
+
+DATA
+TensorFlow, NLTK
+
+TOOLS AND TECHNOLOGIES
+Git, Docker
+
+FRAMEWORKS
+React.js, Express.js
+
+SOFTWARE
+Jupyter Notebook

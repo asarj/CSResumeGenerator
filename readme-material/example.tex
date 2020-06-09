@@ -1,0 +1,200 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Ajay Sarjoo
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper, 10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}% !TEX parameter = % !TEX TS-program = lualatex
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+% ------------------------------------------------
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
+% ------------------------------------------------
+\addtolength{\oddsidemargin}{-.75in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.45in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+	\item\small{
+		\textbf{#1}{#2 \vspace{-3pt}}
+	}
+}
+\newcommand{\resumeProjectItem}[2]{
+	\item\small{
+		\textbf{#1}{#2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheadingEducation}[4]{
+	\vspace{-1pt}\item[\label{}]
+		\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\end{tabular*}\vspace{0pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item[\label{}]
+		\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingProject}[4]{
+	\vspace{-1pt}\item[\label{}]
+		\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		{#1} & #2 \\
+		\end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeProjectItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=* \label{}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+	\textbf{\Huge Ajay Sarjoo} \\[.1in]
+	{\faMobile}{ 1-234-567-8901} | {\faEnvelope}{\href{mailto:ajay@me.com}{ ajay@me.com}} | {\faLaptop}{\href{http://mywebsite.com}{ mywebsite.com}} | {\faLinkedinSquare}{\href{https://linkedin.com/in/mylinkedinurl/}{ mylinkedinurl}} | {\faGithub}{\href{https://github.com/asarj}{ asarj}} 
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+                 \resumeSubHeadingListStart
+                     \resumeSubheadingEducation
+                         {Some University}{Somewhere, NY}
+                         {Bachelor of Science in Computer Science, GPA: 4.0}{Expected May 2021} \\ 
+                         {Relevant Courses: Data Structures, Algorithms, Machine Learning, Natural Language Processing} \\ 
+                 \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+                         \section{Experience}
+                             \resumeSubHeadingListStart
+								\resumeSubheading
+									{Researcher}{December 2019 - Present}
+									{Research Lab}{New York, NY}
+										\resumeItemListStart
+											\resumeItem{}{Detail one}
+											\resumeItem{}{Detail two}
+											\resumeItem{}{Detail three}
+										\resumeItemListEnd
+								\resumeSubheading
+									{Teaching Assistant}{August 2019 - May 2020}
+									{Somewhere University}{Somewhere, NY}
+										\resumeItemListStart
+											\resumeItem{}{Detail one}
+											\resumeItem{}{Detail two}
+										\resumeItemListEnd
+							\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+                                 \section{Projects}
+                                     \resumeSubHeadingListStart
+								\resumeSubheadingProject
+									{\textbf{Calculator} \textit{- Python, React.js}}{May 2020 - June 2020}
+									{}{}
+										\resumeItemListStart
+											\resumeItem{}{Detail one}
+											\resumeItem{}{Detail two}
+										\resumeItemListEnd
+								\resumeSubheadingProject
+									{\textbf{Trading App} \textit{- HTML, CSS, JavaScript}}{January 2019 - May 2019}
+									{}{}
+										\resumeItemListStart
+											\resumeItem{}{Detail one}
+										\resumeItemListEnd
+							\resumeSubHeadingListEnd
+
+%-----------EXTRACURRICULARS-----------------
+                                 \section{Extracurriculars}
+                                     \resumeSubHeadingListStart
+								\resumeSubheading
+									{Club Member}{August 2018 - May 2020}
+									{Computing Society}{Somewhere, NY}
+										\resumeItemListStart
+											\resumeItem{}{Detail one}
+											\resumeItem{}{Detail two}
+											\resumeItem{}{Detail three}
+										\resumeItemListEnd
+							\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+                 \section{Skills}
+                     \resumeSubHeadingListStart
+                     	\itemsep-0.3em
+                         \item[]{
+                                 \textbf{Languages}{: Java, Python}
+                         }
+                         \itemsep-0.3em
+                         \item[]{
+                        	 	\textbf{Web Development}{: HTML, CSS}
+                         }
+                         \itemsep-0.3em
+                         \item[]{
+                             	\textbf{Data}{: TensorFlow, NLTK}
+                         }
+                         \itemsep-0.3em
+                     	\item[]{
+				\textbf{Tools and Technologies}{: Git, Docker}
+			}
+			\itemsep-0.3em
+                         \item[]{
+                             	\textbf{Frameworks}{: React.js, Express.js}
+                         }
+                         \itemsep-0.3em
+                         \item[]{
+                         		\textbf{Software}{: Jupyter Notebook}
+                         }
+                 	\resumeSubHeadingListEnd
+
+\end{document}
