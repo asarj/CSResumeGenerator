@@ -6,7 +6,7 @@ You should also have basic knowledge of LaTeX syntax before using this program
 
 ## Text File Specification
 The text file you supply to the program requires 6 parts.  
-You will need to specify all 6, even if some sections don't pertain to you. If there is a section that doesn't apply to you, write the word `blank` under that section. 
+You will need to specify all 6, even if some sections don't pertain to you. If there is a section that doesn't apply to you, write the word `blank` under that section. **If the text file does not conform to the specifications, it will not generate**
 
 ### General Structure  
 For a general structure of what the text file should look like, take a look at the `example.txt` file in the repo. **Note that every section must be separated by two (2) newlines otherwise IT WILL NOT GENERATE.**  
