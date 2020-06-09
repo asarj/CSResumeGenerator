@@ -266,13 +266,13 @@ class Generator():
                     \t\\itemsep-0.3em\n \
                         \\item[]{\n \
                             \\textbf{Data}{: " + ", ".join(self.resume_dict['skills']['data']) + "}\n \
-                                \\noindent\\hbox to 0.075 \\textwidth{}\n \
+                                \\noindent\\hbox to 0.05 \\textwidth{}\n \
                                 \\textbf{Tools and Technologies}{: " + ", ".join(self.resume_dict['skills']['tools_and_technologies']) + "}\n \
                         }\n \
                     \t\\itemsep-0.3em\n \
                         \item[]{\n \
                             \\textbf{Frameworks}{: " + ", ".join(self.resume_dict['skills']['frameworks']) + "}\n \
-                            \\noindent\\hbox to 0.145 \\textwidth{}\n \
+                            \\noindent\\hbox to 0.12 \\textwidth{}\n \
                                 \\textbf{Software}{: " + ", ".join(self.resume_dict['skills']['software']) + "}\n \
                         }\n \
                 "
