@@ -1,8 +1,12 @@
 # ResumeGenerator
 A Python script to generate a beautiful CS resume in the style of [Ajay Sarjoo](https://www.ajaysarjoo.com/cv)
 
-This program requires that you supply a `.txt` file containing your resume information. This will need to be formatted in a specific way, as specified in the [Text File Specs](#text-file-specification)  
+This program requires that you supply a `.txt` file containing your resume information. This will need to be formatted in a **very** specific way, as specified in the [Text File Specs](#text-file-specification)  
 You should also have basic knowledge of LaTeX syntax before using this program
+
+## Dependencies
+- Python 3+
+- LuaLaTeX (though if you have TeX Live installed, you won't need to reinstall this)
 
 ## Text File Specification
 The text file you supply to the program requires 6 parts.  
@@ -249,10 +253,10 @@ If we wanted to create a resume based off of `example.txt`, I can run the follow
 python3 resume_generator.py -i "./example.txt" -o "./readme-material/" -resume-filename "example" 
 ```
 
-And we will get the following output  
+And we will get the following output in `/readme-material/example.pdf`
 ![Example Pdf](./readme-material/example.png)
 
-The skills section looks a bit disorganized and could definitely use better alignment. We can re-run the script to keep the .tex file so that we can edit it
+The skills section looks a bit disorganized and could definitely use better alignment. We can re-run the script to retain the .tex file so that we can edit it
 ```bash
 python3 resume_generator.py -i "./example.txt" -o "./readme-material/" -resume-filename "example" --keep-tex
 ```
@@ -328,5 +332,6 @@ to regenerate the PDF file.
 ## To-Do
 - Add dynamic alignment for the skills section
 - Selective content generation (instead of command line flags)
+- Template customization
 - Making a GUI version of this application
 - Code refactoring for clarity
