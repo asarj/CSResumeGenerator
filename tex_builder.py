@@ -171,13 +171,25 @@ class Generator():
     def generate_education(self):
         section = ""
         section += "\n%-----------EDUCATION-----------------\n"
-        section += "\\section{Education}\n \
-                \\resumeSubHeadingListStart\n \
-                    \\resumeSubheadingEducation\n \
-                        {" + self.resume_dict['education']['university'] + "}{" + self.resume_dict['education']['location'] + "}\n \
-                        {" + self.resume_dict['education']['degree'] + ", GPA: " + self.resume_dict['education']['gpa_honors'] + "}{" + self.resume_dict['education']['attended_range'] + "} \\\\ \n \
-                        {" + ((self.resume_dict['education']['courses'].replace("&", "\&")) if not self.args.no_coursework else "") + "} \\\\ \n \
-                \\resumeSubHeadingListEnd\n"
+        if not self.args.no_gpa:
+            section += "\\section{Education}\n \
+                    \\resumeSubHeadingListStart\n \
+                        \\resumeSubheadingEducation\n \
+                            {" + self.resume_dict['education']['university'] + "}{" + self.resume_dict['education']['location'] + "}\n \
+                            {" + self.resume_dict['education']['degree'] + ", GPA: " + self.resume_dict['education']['gpa_honors'] + "}{" + self.resume_dict['education']['attended_range'] + "} \\\\ \n \
+                            {" + ((self.resume_dict['education']['courses'].replace("&", "\&")) if not self.args.no_coursework else "") + "} \\\\ \n \
+                    \\resumeSubHeadingListEnd\n"
+        else:
+            section += "\\section{Education}\n \
+                                \\resumeSubHeadingListStart\n \
+                                    \\resumeSubheadingEducation\n \
+                                        {" + self.resume_dict['education']['university'] + "}{" + \
+                       self.resume_dict['education']['location'] + "}\n \
+                                        {" + self.resume_dict['education']['degree'] + "}{" + self.resume_dict['education'][
+                           'attended_range'] + "} \\\\ \n \
+                                        {" + ((self.resume_dict['education']['courses'].replace("&",
+                                                                                                "\&")) if not self.args.no_coursework else "") + "} \\\\ \n \
+                                \\resumeSubHeadingListEnd\n"
 
         return section
 
