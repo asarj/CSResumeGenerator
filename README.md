@@ -1,5 +1,5 @@
 # ResumeGenerator
-A Python script to generate a beautiful CS resume in the style of [Ajay Sarjoo](https://www.ajaysarjoo.com/cv)
+A Python script to generate a beautiful CS resume in the style of [Ajay Sarjoo](https://www.ajaysarjoo.com/)
 
 This program requires that you supply a `.txt` file containing your resume information. This will need to be formatted in a **very** specific way, as specified in the [Text File Specs](#text-file-specification)  
 You should also have basic knowledge of LaTeX syntax before using this program
